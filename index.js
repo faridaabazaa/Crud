@@ -14,6 +14,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// ✅ ROOT ROUTE (fixes "Cannot GET /")
+app.get("/", (req, res) => {
+  res.send("API is running 🚀");
+});
+
 // Routes
 app.use("/api/user", userRoute);
 app.use("/api/task", taskRoute);
