@@ -137,6 +137,10 @@ function App() {
                       Delete
                     </button>
                   </div>
+
+                  app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
                 </>
               )}
             </div>
