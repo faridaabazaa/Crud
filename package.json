@@ -5,9 +5,10 @@
   "author": "Farida",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
+ "scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+},
   "dependencies": {
     "axios": "^1.14.0",
     "body-parser": "^2.2.2",
