@@ -1,0 +1,176 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.card {
+  width: 550px;
+  background: #161b22;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.4s ease;
+}
+
+/* Title */
+.heading {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  color: #c9d1d9;
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.2);
+  outline: none;
+}
+
+/* Primary button */
+.primary-btn {
+  background: #238636;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: #2ea043;
+  transform: translateY(-1px);
+}
+
+/* Task list */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Task card */
+.task-card {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  transition: all 0.25s ease;
+}
+
+.task-card:hover {
+  border-color: #58a6ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(88, 166, 255, 0.15);
+}
+
+/* Text */
+.task-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.task-card p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #8b949e;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.edit-btn {
+  background: transparent;
+  border: 1px solid #30363d;
+  color: #58a6ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-btn:hover {
+  background: rgba(88, 166, 255, 0.1);
+  border-color: #58a6ff;
+}
+
+.delete-btn {
+  background: transparent;
+  border: 1px solid #30363d;
+  color: #f85149;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: rgba(248, 81, 73, 0.1);
+  border-color: #f85149;
+}
+
+.save-btn {
+  background: #238636;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #2ea043;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
