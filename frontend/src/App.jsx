@@ -10,7 +10,7 @@ function App() {
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
 
-  const API = "http://localhost:8000/api/task";
+  const API = "https://crud-qntw.onrender.com/api/task";
 
   const fetchTasks = async () => {
     const res = await axios.get(API);
